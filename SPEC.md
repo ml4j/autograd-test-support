@@ -18,4 +18,6 @@ invalid roots/seeds, higher derivatives and parameter replacement isolation.
 Two concrete suites in src/test/java run all contracts against the scalar factories.
 Existing autograd unit tests and production code remain unchanged.
 
-Tensor inheritance and duplicate-test consolidation are subsequent increments.
+tensors-test-support extends this base with uniform 2-by-3 tensor fixtures.
+Backend consumers inherit both generic and tensor-specific tests. Existing tensor
+checks that also exercise reduction paths are retained.
